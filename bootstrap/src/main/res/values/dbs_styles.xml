@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="DBSTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/dbs_common_blue</item>
+        <item name="colorPrimaryDark">@color/dbs_common_blue</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="actionBarTheme">@style/DBSActionBarTheme</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <!-- activity -->
+    <style name="DBSActivity" parent="DBSTheme"/>
+
+    <style name="DBSActivity.NoActionBar">
+        <item name="colorPrimary">@color/dbs_common_blue</item>
+        <item name="colorPrimaryDark">@color/dbs_common_blue</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:editTextStyle">@style/DBSEditText</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DBSActionBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <!-- divider -->
+    <style name="DBSDividerLine">
+        <item name="android:background">@color/dbs_divider_line_color</item>
+    </style>
+
+    <style name="DBSDividerLine.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line_height</item>
+    </style>
+
+    <style name="DBSDividerLine.Vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/divider_line_height</item>
+    </style>
+
+
+    <!-- editText -->
+    <style name="DBSEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <!-- text appearance -->
+    <style name="DBSTextAppearance"/>
+
+    <style name="DBSTextAppearance.Large">
+        <item name="android:textSize">@dimen/dbs_textsize_large</item>
+    </style>
+
+    <style name="DBSTextAppearance.Large.Gray">
+        <item name="android:textColor">@color/dbs_common_gray</item>
+    </style>
+
+    <style name="DBSTextAppearance.Normal">
+        <item name="android:textSize">@dimen/dbs_textsize_normal</item>
+    </style>
+
+    <style name="DBSTextAppearance.Normal.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DBSTextAppearance.Normal.Gray">
+        <item name="android:textColor">@color/dbs_common_gray</item>
+    </style>
+
+    <style name="DBSTextAppearance.Small">
+        <item name="android:textSize">@dimen/dbs_textsize_small</item>
+    </style>
+
+    <style name="DBSTextAppearance.Smaller">
+        <item name="android:textSize">@dimen/dbs_textsize_smaller</item>
+    </style>
+
+    <!-- Avatar -->
+    <style name="DBSAvatar">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="DBSAvatar.Large">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="DBSAvatar.Small">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+</resources>

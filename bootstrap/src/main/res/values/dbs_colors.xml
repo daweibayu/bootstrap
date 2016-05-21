@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dbs_common_blue">#2c97e8</color>
+    <color name="dbs_common_gray">#787878</color>
+    <color name="dbs_commom_read">#ff0000</color>
+
+    <color name="dbs_divider_line_color">#afafaf</color>
+    <color name="dbs_activity_bg_color">#F8F8F8</color>
+</resources>
