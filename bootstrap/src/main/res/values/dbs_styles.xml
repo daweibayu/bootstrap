@@ -16,7 +16,6 @@
         <item name="colorPrimary">@color/dbs_common_blue</item>
         <item name="colorPrimaryDark">@color/dbs_common_blue</item>
         <item name="colorAccent">@android:color/white</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:editTextStyle">@style/DBSEditText</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
