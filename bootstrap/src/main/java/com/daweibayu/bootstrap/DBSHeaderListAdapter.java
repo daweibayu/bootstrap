@@ -43,10 +43,14 @@ public class DBSHeaderListAdapter<T> extends DBSCommonListAdapter<T> {
 
   @Override
   public long getItemId(int position) {
-    if (position == 0 && position == getItemCount() - 1) {
+    if (null != headerView && 0 == position) {
       return -1;
     }
-    return super.getItemId(position);
+
+    if (null != footerView && position == getItemCount() - 1) {
+      return -2;
+    }
+    return super.getItemId(position - 1);
   }
 
   @Override
@@ -64,10 +68,19 @@ public class DBSHeaderListAdapter<T> extends DBSCommonListAdapter<T> {
 
   @Override
   public void onBindViewHolder(DBSCommonViewHolder holder, int position) {
-    if (position == 0 && position == getItemCount() - 1) {
+    int truePosition = position;
+    if (null != headerView) {
+      if (0 == position) {
+        return;
+      } else {
+        truePosition = position - 1;
+      }
+    }
+
+    if (null != footerView && position == getItemCount() - 1) {
       return;
     }
-    super.onBindViewHolder(holder, position);
+    super.onBindViewHolder(holder, truePosition);
   }
 
   @Override
